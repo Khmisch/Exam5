@@ -69,7 +69,10 @@ class IntroActivity : AppCompatActivity() ,  View.OnClickListener{
         when (view!!.id) {
             R.id.tv_skip -> callMainActivity()
 //            R.id.tv_next -> viewPager
-            R.id.tv_done -> callMainActivity()
+            R.id.tv_done ->{
+                SharedPref(this).isSaved = true
+                callMainActivity()
+            }
         }
     }
 
