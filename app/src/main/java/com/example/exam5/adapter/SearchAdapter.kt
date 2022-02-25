@@ -19,7 +19,7 @@ class SearchAdapter  (var context: SearchFragment, var items:ArrayList<Search>) 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_messages_view, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_search_view, parent, false)
         return StoryViewHolder(view)
     }
 

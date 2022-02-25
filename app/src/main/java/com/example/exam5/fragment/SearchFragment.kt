@@ -27,7 +27,7 @@ class SearchFragment : Fragment() {
     }
 
     private fun initViews(view: View) {
-        recyclerCategories = view.findViewById(R.id.recyclerCategories)
+        recyclerCategories = view.findViewById(R.id.recyclerView)
         recyclerCategories.setLayoutManager(GridLayoutManager(context, 1))
         refreshAdapterCat(getAllCategories())
     }
