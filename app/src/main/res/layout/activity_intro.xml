@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|bottom">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:dotsColor="@color/white"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="7dp"
+            android:layout_gravity="center"
+            app:dotsSpacing="2dp"
+            app:dotsWidthFactor="2.5"
+            app:dotsStrokeColor="#AFAEAE"
+            app:dotsStrokeWidth="4dp" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:textSize="15sp"
+                android:visibility="visible"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/black"/>
+
+
+</LinearLayout>

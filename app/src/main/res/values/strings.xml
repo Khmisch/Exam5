@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Exam5</string>
+    <string name="saved_list_title">Saved Listings</string>
+    <string name="add_list_title">Add New Listings</string>
+    <string name="chat_title">Chat</string>
+    <string name="notify_title">Get Notified</string>
+    <string name="saved_list_text">Save your favourite listings to come back to them.</string>
+    <string name="add_list_text">Add new listings directly from the app, including photo gallery and filters. </string>
+    <string name="chat_text">Communicate with your costumers and vendors in real time</string>
+    <string name="notify_text">Stay on top of your game with real time push notifications</string>
+
+</resources>
