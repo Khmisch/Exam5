@@ -12,7 +12,7 @@ import com.example.exam5.fragment.HomeFragment
 import com.example.exam5.model.Categories
 import com.example.exam5.model.Restaurants
 
-class RestaurantsAdapter (context: HomeFragment, var items:ArrayList<Restaurants>) : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+class RestaurantsAdapter (var context: HomeFragment, var items:ArrayList<Restaurants>) : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     override fun getItemCount(): Int {
         return items.size

@@ -48,8 +48,8 @@ class HomeFragment: Fragment() {
         val chats: ArrayList<Categories> = ArrayList<Categories>()
                 chats.add(Categories(R.drawable.im_sample_food_0, "Restaurants"))
                 chats.add(Categories(R.drawable.im_sample_food_1, "Coffee Shop"))
-                chats.add(Categories(R.drawable.im_sample_food_1, "Shopping"))
-                chats.add(Categories(R.drawable.im_sample_food_1, "Sport"))
+                chats.add(Categories(R.drawable.im_sample_food_2, "Shopping"))
+                chats.add(Categories(R.drawable.im_sample_food_3, "Sport"))
 
         return chats
     }
