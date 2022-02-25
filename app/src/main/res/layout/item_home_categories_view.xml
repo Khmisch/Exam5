@@ -10,15 +10,16 @@
         android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#7EEDEDED">
+        android:background="@drawable/shape_border_rounded">
 
-        <ImageView
-            android:id="@+id/iv_food"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/im_sample_food_3"/>
 
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_food"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/rounded_sharp"
+                android:src="@drawable/im_sample_food_3"/>
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
@@ -30,8 +31,9 @@
                 android:singleLine="true"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"/>
+
 
     </LinearLayout>
 

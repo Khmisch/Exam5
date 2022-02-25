@@ -22,7 +22,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="6dp"
             android:gravity="center_vertical|right">
 
             <TextView
@@ -38,10 +37,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="6dp"
             android:orientation="vertical"
             android:gravity="center_vertical|left">
 
+            <ImageView
+                android:id="@+id/iv_stars"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:src="@drawable/im_sample_stars_0"
+                app:tint="@color/pink" />
             <TextView
                 android:id="@+id/tv_location"
                 android:layout_width="wrap_content"
@@ -50,12 +54,6 @@
                 android:textSize="12sp"
                 android:text="Bunch * Colorado Springs"
                 android:textColor="#454040"/>
-            <ImageView
-                android:id="@+id/iv_stars"
-                android:layout_width="100dp"
-                android:layout_height="20dp"
-                android:src="@drawable/im_sample_stars_0"
-                app:tint="@color/pink" />
         </LinearLayout>
 
     </LinearLayout>

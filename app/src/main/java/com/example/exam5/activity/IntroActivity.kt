@@ -1,7 +1,5 @@
 package com.example.exam5.activity
 
-import android.R.attr.left
-import android.R.attr.right
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -63,12 +61,14 @@ class IntroActivity : AppCompatActivity() ,  View.OnClickListener{
         })
     }
 
-
+    private fun getItem(i: Int): Int {
+        return viewPager.getCurrentItem() + i
+    }
 
     override fun onClick(view: View?) {
         when (view!!.id) {
             R.id.tv_skip -> callMainActivity()
-//            R.id.tv_next -> viewPager
+            R.id.tv_next -> viewPager.setCurrentItem(getItem(+1), true);
             R.id.tv_done ->{
                 SharedPref(this).isSaved = true
                 callMainActivity()
